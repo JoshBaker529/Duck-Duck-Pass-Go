@@ -5,11 +5,14 @@ def lat_longTox_y(lat_long):
 
     x_y[1] *= 100000
     x_y[1] = (x_y[1]-7878137)*10
-
+    x_y[0]+291
+    x_y[1]+450
     return x_y
 
 def x_yTolat_long(x_y):
     lat_long= x_y 
+    x_y[0]-291
+    x_y[1]-450
     lat_long[0] = (lat_long[0]/10+4299822)
     lat_long[0] /= 100000
     
@@ -17,3 +20,5 @@ def x_yTolat_long(x_y):
     lat_long[1] /= 100000
 
     return lat_long
+#900 
+#582
