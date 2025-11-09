@@ -56,6 +56,6 @@ def getPos():
         );
     """)
     driver.quit()
+    print(result['latitude'], result['longitude'])
     return (result['latitude'], result['longitude'])
 
-print(getPos())
